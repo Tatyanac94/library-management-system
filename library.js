@@ -70,20 +70,22 @@ class Library {
 
   const library = new Library("My Library");
   
-  const bookA = new Book("The Great Gatsby", "F. Scott Fitzgerald", "978-3-16-148410-0", "Classic", "English");
-  const bookB = new Book("To Kill a Mockingbird", "Harper Lee", "978-2-940-01357-7", "Classic", "English");
-  const bookC = new Book("How to Get Rich", "Jeff Bezos", "978-1-59327-940-7","Business", "English");
+  const bookA = new Book("Matilda", "Roald Dahl", "978-3-16-148660-0", 2);
+  const bookB = new Book("To Kill a Mockingbird", "Harper Lee", "978-2-940-01357-7", 1);
+  const bookC = new Book("How to Get Rich", "Jeff Bezos", "978-1-59327-940-7", 1);
+  const bookD = new Book("Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones", "James Clear", "978-1-59327-932-7", 1);
 
   // Adding books to the library.
   library.addBook(bookA);
   library.addBook(bookB);
   library.addBook(bookC);
+  library.addBook(bookD);
 
   console.log("All books in the library:");
   library.listAllBooks(); // Listing all books in the library.
 
   console.log("\nFinding a book by title:");
-  const foundBook = library.findBookByTitle("The Great Gatsby"); // Finding a book by title.
+  const foundBook = library.findBookByTitle("Matilda"); // Finding a book by title.
   console.log(foundBook); // Logging the found book.
 
   console.log("\nRemoving a book by ISBN:");
